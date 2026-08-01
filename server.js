@@ -22,7 +22,6 @@ const router = require('./api/routes/VocabRoute')
 
 router(app)
 
-const port = 3636
-app.listen(port, ()=>{
-    console.log("server is running at port " + port)
+app.listen(process.env.PORT || 3600, () => {
+    console.log("server is running at port " + (process.env.PORT || 3600))
 }) 
