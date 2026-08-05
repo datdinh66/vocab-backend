@@ -13,7 +13,7 @@ app.use(cors())
 
 // declare mongoose to connect to database
 const mongoose = require("mongoose") 
-const database = "mongodb+srv://datdinh66:nguoiaye3@tdq.zv9hcsp.mongodb.net/"
+const database = "mongodb+srv://datdinh66:nguoiaye3@tdq.zv9hcsp.mongodb.net/comp1842"
 mongoose.connect(database)
     .then(()=> console.log("connect to database succes"))
     .catch((err) => console.log("connect to DB fail " + err))
