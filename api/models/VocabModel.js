@@ -5,15 +5,21 @@ const vocabSchema = new mongoose.Schema({
     english: {
         type: String,
         required: [true, "English word cannot be empty."],
-        minlength: [5, "English word must be at least 5 characters."],
+        minlength: [1, "English word must be at least 5 characters."],
         maxlength: [20, "English word cannot exceed 20 characters."]
     },
     german: {
         type: String,
         required: [true, "German word cannot be empty."],
-        minlength: [5, "German word must be at least 5 characters."],
+        minlength: [1, "German word must be at least 5 characters."],
         maxlength: [20, "German word cannot exceed 20 characters."]
-    }
+    },
+    vietnam: {
+        type: String,
+        required: [true, "vietnam word cannot be empty."],
+        minlength: [1, "vietnam word must be at least 5 characters."],
+        maxlength: [20, "vietnam word cannot exceed 20 characters."]
+    },
 }, { 
     timestamps: true // Optional: Adds createdAt and updatedAt timestamps automatically
 },{
